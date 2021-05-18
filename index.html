@@ -4,32 +4,38 @@
         <meta charset= "utf-8">
         <title>Instagram</title>
         <link rel="stylesheet" href="css/style.css">
+        <script type ="text/javascript" src="js/Functions.js"></script>
     </head>
 
-    <body>
+    <body id="body-page">
+
         <div class="instagram-inicio">
             <div class="instagram-phone">
-                <img src="img/instagram-celular.png">
+                <img src="img/instagram-celular-white.png" id ="instagram-phone-white">
+                <img src="img/instagram-celular-black.png" id ="instagram-phone-black">
             </div>
+
             <div class="instagram-continuar">
-                <div class="group">
+                <input type="button" value="Ho" onClick="entrarConta()"/>
+                <div id = "Login" class="group">
                     <img src="img/instagram-logo.png" alt="Instagram Logo" class="instagram-logo">
                     <div class="instragram-img-profile">
                         <img src="img/perfil-instagram.jpg" alt="Imagem de Perfil">
                     </div>
 
-                    <a href="https://github.com/EduardoAtene" class="button-enter">Continue como duduatene</a>
+                    <a href="https://github.com/EduardoAtene" class="button-enter" id="Teste">Continue como </a>
                     <a href="https://github.com/EduardoAtene" class="button-remove">Remover conta</a>
                 </div>
 
-                <div class="group">
-                    <p>
+                <div id = "Alternar" class="group">
+                    <p class="not-conta">Não é duduatene?</p>
+                    <p class="not-conta">
                         <span class="link-blue">
-                            <a href="htpps://www.google.com.br" >Não é duduatene?</a>
+                            <a href="#" >Alternar contas</a>
                         </span>
                         ou
                         <span class="link-blue">
-                            <a href="htpps://www.google.com.br" >Inscreva-se.</a>
+                            <a href="#">Inscreva-se.</a>
                         </span>
                     </p>
                 </div>
@@ -37,16 +43,19 @@
                 <div class="instagram-aplicativo">
                     <p class="get-app">Baixe o aplicativo</p>
                     <div class="downloads">
-                        <a href="https://apps.apple.com/br/app/instagram/id389801252">
-                            <img src="img/apple-button.png" alt="Download Instagram for AppStore">
-                        </a>
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US">
-                            <img src="img/googleplay-button.png" alt="Download Instagram for Google Play">
-                        </a><a href=""></a>
+                        <a href="https://apps.apple.com/br/app/instagram/id389801252" class="app-download"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US" class="app-download"></a>
                     </div>
                 </div>
+
+                <div class="alterar-color">
+                    <img onclick="colorPage(id)" id= "button-black" class="button-color-page" src="img/button_black.png">
+                    <img onclick="colorPage(id)" id= "button-white" class="button-color-page" src="img/button_white.png">
+                    
+                </div>
             </div>
-        </div>
+        </>
+
+
     </body>
 </html>
