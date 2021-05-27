@@ -54,7 +54,7 @@ body{
 }
 
 .group{
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -70,6 +70,14 @@ body{
 
 .instagram-logo{
     height: 3ren;
+}
+
+#insta-logo-black{
+    display: block;
+}
+
+#insta-logo-white{
+    display: none;
 }
 
 .instragram-img-profile{
